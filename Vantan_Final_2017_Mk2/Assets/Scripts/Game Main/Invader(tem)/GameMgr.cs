@@ -47,6 +47,10 @@ public class GameMgr : MonoBehaviour
         SoundMgr.SoundLoadSe("Start", "Invader/Start");
         SoundMgr.SoundLoadBgm("Window_Rule", "Invader/Window_Rule");
         SoundMgr.PlayBgm("Window_Rule");
+
+        //Result
+        SoundMgr.SoundLoadSe("SelectSE", "Invader/SelectSE");
+
     }
 
 
@@ -113,6 +117,8 @@ public class GameMgr : MonoBehaviour
 
             //リザルト
             case GameState.Result:
+               
+
                 if (Input.GetAxis("BottomRed") == 1)
                 {
                     Disable();
@@ -122,6 +128,8 @@ public class GameMgr : MonoBehaviour
                 if (Input.GetAxis("BottomGreen") == 1)
                 {
                     Disable();
+
+                    STGGameState.SetState(0);
                     SoundMgr.StopBgm();
                     SceneManager.LoadScene("MainTitle");
                 }
