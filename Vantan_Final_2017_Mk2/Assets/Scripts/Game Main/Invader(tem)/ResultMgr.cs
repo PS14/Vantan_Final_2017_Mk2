@@ -14,24 +14,16 @@ public class ResultMgr : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var menuSelector = GetComponent<MSMM.MenuSelector>();
-
         if (Input.GetAxis("BottomGreen") == 1)
         {
             SoundMgr.PlaySe("Push");
-
-            SceneManager.LoadScene("InvaderTitle");
-            menuSelector.Reset();
-
-
+          SceneManager.LoadScene("InvaderTitle");
         }
         if (Input.GetAxis("BottomRed") == 1)
         {
             SoundMgr.PlaySe("Push");
             SceneManager.LoadScene("MainTitle");
             SoundMgr.StopBgm();
-            menuSelector.Reset();
-
         }
     }
 }

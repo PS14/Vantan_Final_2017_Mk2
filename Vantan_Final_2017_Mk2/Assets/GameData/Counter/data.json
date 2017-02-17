@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "udccount": 0,
     "stgcount": 1,
+=======
+    "udccount": 3,
+    "stgcount": 0,
+>>>>>>> f22ab1090e5cfa773f7161da35a62967d9b57135
     "udccountend": 0,
     "stgcountend": 0
 }
