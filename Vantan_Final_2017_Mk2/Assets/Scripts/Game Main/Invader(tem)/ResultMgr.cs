@@ -9,6 +9,8 @@ public class ResultMgr : MonoBehaviour
     void Start()
     {
         SoundMgr.SoundLoadSe("Push", "Invader/Push");
+        SoundMgr.SoundLoadBgm("Result_A", "Invader/Result_A");
+        SoundMgr.PlayBgm("Result_A");
     }
 
     // Update is called once per frame
@@ -18,6 +20,7 @@ public class ResultMgr : MonoBehaviour
         {
             SoundMgr.PlaySe("Push");
           SceneManager.LoadScene("InvaderTitle");
+            SoundMgr.StopBgm();
         }
         if (Input.GetAxis("BottomRed") == 1)
         {

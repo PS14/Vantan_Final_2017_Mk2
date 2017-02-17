@@ -5,6 +5,10 @@
             "score": 500
         },
         {
+            "name": "VAN",
+            "score": 436
+        },
+        {
             "name": "AAA",
             "score": 400
         },
@@ -15,10 +19,6 @@
         {
             "name": "BDF",
             "score": 240
-        },
-        {
-            "name": "AAA",
-            "score": 200
         }
     ]
 }
